@@ -1,4 +1,9 @@
-const assertEqual = require('../assertEqual');
-const tail = require('../tail')
+const assert = require("chai").assert;
+const tail = require("../tail");
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-assertEqual(words[2], 'Labs'); 
+
+describe("#tail()", () => {
+  it('should return Labs for ["Yo Yo", "Lighthouse", "Labs"]', () => {
+    assert.strictEqual(tail(words), "Labs");
+  });
+});
