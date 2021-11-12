@@ -22,4 +22,7 @@ const flatten = function(arr1) {
   return console.log(result);
 };
 
-flatten([1, 2, [3, 4], 5, [6]]); // => [1, 2, 3, 4, 5, 6]
+module.exports = flatten;
+
+
+
