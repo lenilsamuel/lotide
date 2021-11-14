@@ -1,11 +1,11 @@
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) return false;
   }
   return true;
 };
 
-const eqObjects = function (obj1, obj2) {
+const eqObjects = function(obj1, obj2) {
   if (Object.keys(obj1).length !== Object.keys(obj2).length) return false;
   for (let key in obj1) {
     if (Array.isArray(obj1[key])) {
@@ -15,7 +15,7 @@ const eqObjects = function (obj1, obj2) {
   return true;
 };
 
-const assertObjectsEqual = function (obj1, obj2) {
+const assertObjectsEqual = function(obj1, obj2) {
   const inspect = require("util").inspect;
   if (eqObjects(obj1, obj2))
     console.log(
