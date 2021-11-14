@@ -1,4 +1,4 @@
-const tail = function (arr) {
+const tail = function(arr) {
   let tailArray = [];
   for (let item of arr) {
     tailArray.push(item);
