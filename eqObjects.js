@@ -5,7 +5,7 @@ function eqArrays(arr1, arr2) {
   return true;
 }
 
-const eqObjects = function (obj1, obj2) {
+const eqObjects = function(obj1, obj2) {
   if (Object.keys(obj1).length !== Object.keys(obj2).length) return false;
   for (let key in obj1) {
     if (Array.isArray(obj1[key])) {
