@@ -1,4 +1,4 @@
-const middle = function (arr) {
+const middle = function(arr) {
   let result = [];
   let mid = Math.floor([arr.length - 1] / 2);
   console.log(mid);
