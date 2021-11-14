@@ -3,7 +3,10 @@ const tail = function (arr) {
   for (let item of arr) {
     tailArray.push(item);
   }
-  return tailArray[tailArray.length - 1];
+  tailArray.shift();
+  return tailArray;
 };
 
 module.exports = tail;
+
+console.log(tail([1, 2, 3, 4, 5]));
