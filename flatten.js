@@ -1,4 +1,4 @@
-const flatten = function (arr1) {
+const flatten = function(arr1) {
   let result = [];
   for (let arr of arr1) {
     if (Array.isArray(arr)) {
@@ -7,10 +7,10 @@ const flatten = function (arr1) {
       result.push(arr);
     }
   }
-  return console.log(result);
+  return result;
 };
 
-const assertArrayEqual = function (arr1, arr2) {
+const assertArrayEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) console.log("✅✅✅ These arrays are equal");
   else console.log("🔴🔴🔴 These arrays are not equal");
 };
