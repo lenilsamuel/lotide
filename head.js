@@ -1,4 +1,4 @@
-const head = function (arr) {
+const head = function(arr) {
   if (!arr) return undefined;
   return arr[0];
 };
