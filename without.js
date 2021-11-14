@@ -9,7 +9,7 @@ const without = function(arr1, arr2) {
       result.push(key);
     }
   }
-  return console.log(result);
+  return result;
   
 };
 
@@ -28,5 +28,4 @@ function eqArrays(arr1, arr2) {
 without([1, 2, 3], [1]); // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
 const words = ["hello", "world", "lighthouse"];
-without(words,["lighthouse"]);
-assertArrayEqual(words, ["hello", "world", "lighthouse"]);
+assertArrayEqual(without(words, ["lighthouse"]), ["hello", "world", "lighthouse"]);
