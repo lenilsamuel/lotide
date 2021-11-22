@@ -1,6 +1,6 @@
 {
   "name": "@lenilsamuel/lotide",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This project was created and published by me as part of my learnings at Lighthouse Labs. It is inspired by the Lodash library.",
   "main": "index.js",
   "directories": {
