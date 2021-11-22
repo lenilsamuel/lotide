@@ -8,7 +8,7 @@ const letterPositions = function(str) {
     }
     
   }
-  return console.log(result);
+  return result;
 };
 
 module.exports = letterPositions;
