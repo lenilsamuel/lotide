@@ -1,4 +1,4 @@
-const letterPositions = function(str) {
+const letterPositions = function (str) {
   let result = {};
   for (let i = 0; i < str.length; i++) {
     if (result[str[i]]) {
@@ -6,7 +6,6 @@ const letterPositions = function(str) {
     } else {
       result[str[i]] = [i];
     }
-    
   }
   return result;
 };
