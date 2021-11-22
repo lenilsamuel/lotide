@@ -13,5 +13,5 @@ const countLetters = function(str) {
       result[val] = 1;
     }
   }
-  return console.log(result);
+  return result;
 };
